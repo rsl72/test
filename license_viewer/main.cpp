@@ -1,5 +1,5 @@
 #include <afxwin.h>
-#include <QtWidgets/QApplication>
+#include <QApplication>
 #include "LicenseViewer.h"
 
 class LicenseApp : public CWinApp {

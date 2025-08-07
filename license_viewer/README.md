@@ -15,4 +15,4 @@ cmake -S . -B build -G "Visual Studio 17 2022" -A x64
 cmake --build build
 ```
 
-Make sure Qt 6 and Visual Studio MFC components are installed.
+Make sure Qt 5 and Visual Studio MFC components are installed.
