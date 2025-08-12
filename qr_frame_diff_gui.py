@@ -8,7 +8,12 @@ import cv2
 
 
 def select_rois(frame):
-    """Display a GUI to select two regions of interest containing QR codes."""
+
+    """Display a GUI to select two regions of interest containing QR codes.
+
+    After selecting two areas, press the *Enter* key to begin analysis.
+    """
+
     import tkinter as tk
     from PIL import Image, ImageTk
 
@@ -52,6 +57,9 @@ def select_rois(frame):
             root.destroy()
 
     tk.Button(root, text="OK", command=on_ok).pack()
+
+    root.bind("<Return>", lambda _event: on_ok())
+
     root.mainloop()
     return rois
 
